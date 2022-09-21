@@ -1,27 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Khalina Boyce </title>
-</head>
-<body>
-    <img src="
-    " alt="Khalina Boyce, Front End Web Developer">
-    <div>
+<html lang="en-us">
+  <head>
+    <title>Khalina Boyce </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
 
-<h2> Hello! My name id Khalina Boyce. I'm a freelance web developer. </h2>
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laborum officia labore eos sed! Reprehenderit beatae itaque maxime molestias voluptas fugit excepturi officiis debitis, cupiditate facere repellat sunt eveniet illum.
-</p>
-<a href="#"> View my work </a>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Khalina Boyce </h1>
+        <ul>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <label class="toggle-switch">
+          Dark Mode
+          <input type="checkbox" id="dark-mode-toggle">
+          <div class="toggle-switch-border">
+            <div class="toggle-switch-dot"></div>
+          </div>
+        </label>
+      </div>
+    </header>
 
+    <section class="bio">
+      <img class="profile-img" src="src/Headshot.png" />
+      <div>
+        <h2> Khalina Boyce </h2>
+        <h3> Front End Web Developer, Based in Virginia </h3>
+        <p>
+         I have a passion for creating! Using a minimalist aesthetic, I create simple, responsive websites. I am eager to help make your vision become reality.
+         <br> <br>
+          I thrive on new challanges and deepening my understanding of web developement.
+When I am not coding, I like doing yoga and/or meditation to relax my mind, exercising and spending time out in nature.
+        </p>
+        <a class="btn" href="#">View my work</a>
+      </div>
+    </section>
 
+    <section class="recent-work">
+      <h2>Recent Work</h2>
+      <article>
+        <div>
+          <h3>Ebb & Flow yoga studio </h3>
+          <p>Measuring sentiment in real-world SMS data.</p>
+          <strong>April 2022</strong>
+          <ul>
+            <li>Imported large, complex datasets for text preprocessing</li>
+            <li>Analyzed data for positive and negative sentiment using Language Parsing, Word Vectorization, and Topic Modeling</li>
+            <li>Generated visualizations from results</li>
+          </ul>
+          <a href="#">GitHub Repo</a>
+        </div>
+        <img class="article-img" src="https://static-assets.codecademy.com/assets/livestreams/national_coding_week/phone.png" />
+      </article>
+      <article>
+        <div>
+          <h3> Weather application</h3>
+          <p>Data analysis on the conservation statuses of various endangered species living in national parks.</p>
+          <strong>March 2022 </strong>
+          <ul>
+            <li>Analyzed, cleaned, then plotted data using Matplotlib</li>
+            <li>Searched for patterns or themes in data</li>
+            <li>Used Jupyter Notebook to communicate findings and conservation recommendations</li>
+          </ul>
+          <a href="#">GitHub Repo</a>
+        </div>
+        <video class='article-img' controls>
+              <source src='https://static-assets.codecademy.com/assets/livestreams/national_coding_week/park.mp4'>
+        </video>
+      </article>
+      <article>
+        <div>
+          <h3>Caption Contest</h3>
+          <p>A platform that allows users to participate in photo caption contests.</p>
+          <strong>Jan 2021</strong>
+          <ul>
+            <li>Created the back end for a platform where users can submit captions</li>
+            <li>Implemented security best practices to authenticate and authorize users</li>
+            <li>Created a cache to store frequently requested data</li>
+          </ul>
+          <a href="#">GitHub Repo</a>
+        </div>
+        <img class="article-img" src="https://static-assets.codecademy.com/assets/livestreams/national_coding_week/dog.png" />
+      </article>
+    </section>
 
-    </div>
-
-    <script src="script.js">
-
-    </script>
-</body>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/khalinaboyce/" target="_blank">
+            LinkedIn
+            <span class="link-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            CV
+            <span class="link-icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            GitHub
+            <span class="link-icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copywright">© 2022 Khalina Boyce </p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
